@@ -8,7 +8,7 @@ interface textProps {
   color?: string;
   size?: CSSProperties["fontSize"];
   weight?: CSSProperties["fontWeight"];
-  className?: string;
+  underline?: string;
   styles?: CSSProperties;
 }
 
@@ -18,12 +18,13 @@ export const Text: React.FC<textProps> = ({
   color,
   size,
   weight,
-  className,
+  underline,
   styles = {},
 }) => {
   styles.color = color;
   styles.fontSize = size;
   styles.fontWeight = weight;
+  styles.textDecoration = underline;
   if (type === "p") return <p style={{ ...styles }}>{text}</p>;
   if (type === "span") return <span style={{ ...styles }}> {text}</span>;
   if (type === "h1") return <h1 style={{ ...styles }}>{text}</h1>;

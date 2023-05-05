@@ -24,6 +24,8 @@ interface flexProps {
   id?: string;
   overflow?: string;
   wrap?: "wrap" | "nowrap";
+  border?: string;
+  height?: string;
 }
 
 const FlexWrapper = styled.div`
@@ -40,10 +42,12 @@ export const Flex: React.FC<flexProps> = ({
   padding,
   background,
   width,
+  height,
   borderRadius,
   id,
   overflow,
   wrap,
+  border,
 }) => {
   return (
     <FlexWrapper
@@ -59,8 +63,10 @@ export const Flex: React.FC<flexProps> = ({
         width: width,
         overflow: overflow || "hidden",
         borderRadius: borderRadius,
+        border: border,
         padding: padding,
         flexWrap: wrap,
+        height: height,
       }}
     >
       {children}

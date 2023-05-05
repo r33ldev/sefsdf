@@ -11,7 +11,6 @@ import SectionLayout from "@/components/molecules/sectionLayout";
 import { SUGGESTED_ARTICLES, SUPPORT_CATEGORY } from "@/utils/data";
 import Image from "next/image";
 import { suggestedArticleUrl } from "./[category]/utils/data";
-import { Grid } from "@/components/atoms/grid";
 export default function Home() {
   return (
     <main>
@@ -20,11 +19,11 @@ export default function Home() {
         <HelpCenterSearchBar />
       </SectionLayout>
       <SectionLayout margin="7rem auto 10rem">
-        <Grid columns="repeat(4, 1fr)">
+        <Flex justify="space-between" gap="3rem">
           {SUPPORT_CATEGORY.map((category) => (
             <Link key={category.id} href={category.url}>
               <Flex gap="1.5rem" align="flex-start">
-                <Image src={category.icon} alt={category.name} height={48} />
+                <Image src={category.icon} alt={category.name} height={35} />
                 <div>
                   <Text
                     text={category.name}
@@ -44,11 +43,11 @@ export default function Home() {
               </Flex>
             </Link>
           ))}
-        </Grid>
+        </Flex>
       </SectionLayout>
 
       <SectionLayout>
-        <Grid columns="repeat(4, 1fr)">
+        <Flex justify="space-between" gap="3rem">
           {SUGGESTED_ARTICLES.map((section, index) => (
             <div key={index}>
               <Text text={section.title} type="h3" size={22} weight={800} />
@@ -69,7 +68,7 @@ export default function Home() {
               ))}
             </div>
           ))}
-        </Grid>
+        </Flex>
       </SectionLayout>
     </main>
   );

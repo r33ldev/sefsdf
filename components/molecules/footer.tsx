@@ -21,7 +21,6 @@ export default function HelpCenterFooter() {
         <Flex gap="4rem" align="center">
           <Text
             text={`© ${new Date().getFullYear()} Checkin`}
-            className="text-xl"
             type="p"
             size={15}
             styles={{ marginRight: "2rem" }}
