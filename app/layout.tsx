@@ -3,6 +3,7 @@ import { siteConfig } from "@/config/site";
 import Head from "next/head";
 import "../styles/globals.css";
 import HelpCenterFooter from "@/components/molecules/footer";
+import StyledComponentsRegistry from "@/lib/registry";
 
 // const font = FontSans({
 //   subsets: ["latin"],
@@ -34,7 +35,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body>
         <div style={{ flex: 1 }}>
           <CheckinHelpCenterHeader />
-          <div>{children}</div>
+          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
         </div>
         <HelpCenterFooter />
       </body>
