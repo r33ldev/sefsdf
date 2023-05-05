@@ -32,7 +32,7 @@ export default function CheckinHelpCenterHeader() {
     <Flex
       align="center"
       justify="space-between"
-      width="90vw"
+      width="85vw"
       margin="2rem auto"
     >
       <a href="/">
