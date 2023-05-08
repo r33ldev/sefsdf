@@ -13,8 +13,10 @@ interface pageProps {
 }
 
 function page({ params }: pageProps) {
-  if (!params.article) return <div>404</div>;
-  const article = getArticle(params.article);
+  if (!params.article || !params?.category) return <div>404</div>;
+  console.log('article', params.article, params?.category)
+  const type = params?.category === "how-to-videos" ? "videos" : "articles";
+  const article = getArticle(params.article, type);
   if (!article) return <div>404</div>;
   return (
     <Flex justify="space-between" margin="2rem 0" >
@@ -28,7 +30,6 @@ function page({ params }: pageProps) {
         </Article>
       </div>
       <TOC />
-
     </Flex >
   );
 }

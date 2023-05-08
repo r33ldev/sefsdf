@@ -1,9 +1,9 @@
+import HelpCenterFooter from "@/components/molecules/footer";
 import CheckinHelpCenterHeader from "@/components/molecules/header";
 import { siteConfig } from "@/config/site";
+import StyledComponentsRegistry from "@/lib/registry";
 import Head from "next/head";
 import "../styles/globals.css";
-import HelpCenterFooter from "@/components/molecules/footer";
-import StyledComponentsRegistry from "@/lib/registry";
 
 // const font = FontSans({
 //   subsets: ["latin"],

@@ -1,5 +1,3 @@
-"use client";
-
 import Flex from "@/components/atoms/flex";
 import Link from "@/components/atoms/link";
 import Text from "@/components/atoms/text";

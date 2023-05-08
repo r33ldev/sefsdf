@@ -7,13 +7,18 @@ interface gridProps {
   gap?: string;
 }
 
-const GridWrapper = styled.div<{ columns: string, gap: string }>`
+const GridWrapper = styled.div<{ columns: string; gap: string }>`
   display: grid;
   grid-template-columns: ${(props) => props.columns};
-  grid-gap: ${(props) => props?.gap || '5rem'};
+  grid-gap: ${(props) => props?.gap || "5rem"};
   width: 100%;
+  
 `;
 
 export const Grid: React.FC<gridProps> = ({ children, columns, gap }) => {
-  return <GridWrapper columns={columns} gap={gap || '5rem'}>{children}</GridWrapper>;
+  return (
+    <GridWrapper columns={columns} gap={gap || "5rem"}>
+      {children}
+    </GridWrapper>
+  );
 };

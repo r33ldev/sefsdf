@@ -1,3 +1,5 @@
+'use client'
+
 import styled from "styled-components";
 import Text from "../atoms/text";
 import heroBanner from "../../assets/image/home-banner.png";

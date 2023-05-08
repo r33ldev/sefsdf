@@ -28,3 +28,9 @@ export const CENTER_STYLE = {
 
 export const capitalized = (input: string) =>
   input.replace(/\b\w/g, (char) => char.toUpperCase());
+
+export const constructName = (url: string) => {
+  let name = url.split("/").pop();
+  name = name?.replace(/-/g, " ");
+  return capitalized(name || "");
+}

@@ -19,7 +19,7 @@ export type Support = {
   id: number;
   description: string;
   url: string;
-  layout: string;
+  layout?: string;
   keywords?: string[];
   icon: StaticImageData;
 };
@@ -41,6 +41,8 @@ export type Qparams = {
     search?: string;
     layout?: string;
     article?: string;
+    key?: string | number ;
+    other?: string;
   };
 };
 
@@ -58,4 +60,17 @@ export type SuggestedArticleType = {
   id: number;
   title: string;
   articles: Article[];
+};
+
+
+export type VideoArticle = {
+  id: number;
+  title: string;
+  description: string;
+  content: string;
+  category?: number;
+  section?: number;
+  url: string;
+  videoUrl: string;
+  cover?: StaticImageData
 };

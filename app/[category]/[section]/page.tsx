@@ -9,6 +9,7 @@ import { Divider } from "@/components/atoms/divider";
 import ListingTypeTab from "@/components/molecules/listingTypeTab";
 import Flex from "@/components/atoms/flex";
 import ArrowRight from "@/components/icons/arrowRight";
+import SectionAside from "@/components/molecules/sectionAside";
 
 const TextLink = ({ text, href }: { text: string; href: string }) => (
   <Link href={href}>
@@ -40,28 +41,9 @@ function Section({ params }: Qparams) {
       <Divider margin="0" />
       <ListingTypeTab />
       <SectionLayout margin="4rem auto">
-        <Text text="All" type="h1" size="1.5rem" />
-        {/* <SectionsAndArticles> */}
-
         <Flex gap='4rem' overflow="unset">
-          <aside style={{ width: '15%' }}>
-            <Divider margin="1rem 0" />
-            {subCategories.map((category) => {
-              const active = category.name === subCategory.name
-              return (
-                <div key={category.name} style={{ fontSize: "2rem" }}>
-                  <Link href={`${category.url}`}>
-                    <Flex justify="space-between" align="center">
-                      <Text text={category.name} type='p' size={15} color={active ? '#212121' : '#707070'} weight={active ? 700 : 500} />
-                      <Text text={'3'} type='p' size={13} color='#707070' />
-                    </Flex>
-                  </Link>
-                  <Divider margin="1.2rem 0" />
-                </div>
-              )
-            })}
-          </aside>
-          <main style={{ marginTop: '-2rem', width: '40%' }}>
+          <SectionAside subCategories={subCategories} subCategory={subCategory.name} />
+          <main style={{ width: '40%' }}>
             <Text text="Getting started" type="h1" size="2.3rem" styles={{ marginBottom: '1rem' }} />
             {articles.map((article) => (
               <div key={article.id}>
@@ -74,7 +56,6 @@ function Section({ params }: Qparams) {
             ))}
           </main>
         </Flex>
-        {/* </SectionsAndArticles> */}
       </SectionLayout>
     </>
   );

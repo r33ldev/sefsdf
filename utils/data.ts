@@ -1,4 +1,10 @@
-import { Article, Section, SuggestedArticleType, Support } from "@/types";
+import {
+  Article,
+  Section,
+  SuggestedArticleType,
+  Support,
+  VideoArticle,
+} from "@/types";
 import icon1 from "../assets/image/category/1.svg";
 import icon2 from "../assets/image/category/2.svg";
 import icon3 from "../assets/image/category/3.svg";
@@ -7,6 +13,9 @@ import section1 from "../assets/image/section/1.svg";
 import section2 from "../assets/image/section/2.svg";
 import section3 from "../assets/image/section/3.svg";
 import section4 from "../assets/image/section/4.svg";
+
+import articleCoverImage from "../assets/image/video-article.png";
+
 export const SUPPORT_CATEGORY: Support[] = [
   {
     name: "Knowledge base",
@@ -88,10 +97,10 @@ export const SUPPORT_SUBCATEGORY: Section[] = [
     icon: section1,
   },
   {
-    name: "Troubleshooting",
+    name: "Troubleshooting 1",
     id: 6,
     description: "troubleshooting",
-    url: "troubleshooting",
+    url: "troubleshooting-1",
     category: 2,
     icon: section2,
   },
@@ -104,10 +113,10 @@ export const SUPPORT_SUBCATEGORY: Section[] = [
     icon: section3,
   },
   {
-    name: "Troubleshooting",
+    name: "Partnership",
     id: 8,
-    description: "troubleshooting",
-    url: "troubleshooting",
+    description: "troubleshooting partnership",
+    url: "partnership",
     category: 2,
     icon: section4,
   },
@@ -115,42 +124,11 @@ export const SUPPORT_SUBCATEGORY: Section[] = [
     name: "guides",
     id: 9,
     description: "troubleshooting",
-    url: "troubleshooting",
+    url: "guides",
     category: 3,
     icon: section1,
   },
-  {
-    name: "guides",
-    id: 10,
-    description: "troubleshooting",
-    url: "troubleshooting",
-    category: 3,
-    icon: section2,
-  },
-  {
-    name: "guides",
-    id: 11,
-    description: "troubleshooting",
-    url: "troubleshooting",
-    category: 3,
-    icon: section3,
-  },
-  {
-    name: "guides",
-    id: 12,
-    description: "troubleshooting",
-    url: "troubleshooting",
-    category: 3,
-    icon: section4,
-  },
-  {
-    name: "guides",
-    id: 13,
-    description: "troubleshooting",
-    url: "troubleshooting",
-    category: 3,
-    icon: section1,
-  },
+
   {
     name: "About Checkin",
     id: 14,
@@ -536,3 +514,158 @@ export const SAMPLE_ARTICLE = `
 
 
 `;
+
+export const VIDEO_ARTICLES: VideoArticle[] = [
+  {
+    id: 1,
+    section: 1,
+    title: "Creating a New Account",
+    description: "Step by step guide on creating a new account",
+    url: "creating-a-new-account",
+    videoUrl: "https://www.youtube.com/watch?v=7e90gBu4pas",
+    content: "Creating a New Account",
+    cover: articleCoverImage,
+  },
+  {
+    id: 2,
+    section: 1,
+    title: "Updating Account Information",
+    description: "How to update your account information",
+    url: "updating-account-information",
+    videoUrl: "https://www.youtube.com/watch?v=7e90gBu4pas",
+    content: "Updating Account Information",
+    cover: articleCoverImage,
+  },
+  {
+    id: 3,
+    section: 2,
+    title: "Removing an Account",
+    description: "Guide to deleting your account",
+    url: "removing-an-account",
+    videoUrl: "https://www.youtube.com/watch?v=7e90gBu4pas",
+    content: "Removing an Account",
+    cover: articleCoverImage,
+  },
+  {
+    id: 4,
+    section: 1,
+    title: "Selling Your Account",
+    description: "How to sell your account safely",
+    url: "selling-your-account",
+    videoUrl: "https://www.youtube.com/watch?v=7e90gBu4pas",
+    content: "Selling Your Account",
+    cover: articleCoverImage,
+  },
+  {
+    id: 5,
+    section: 2,
+    title: "Understanding Billing",
+    description: "Overview of the billing process",
+    url: "understanding-billing",
+    videoUrl: "https://www.youtube.com/watch?v=7e90gBu4pas",
+    content: "Understanding Billing",
+    cover: articleCoverImage,
+  },
+  {
+    id: 6,
+    section: 3,
+    title: "Billing Details",
+    description: "How to access and review your billing details",
+    url: "billing-details",
+    videoUrl: "https://www.youtube.com/watch?v=7e90gBu4pas",
+    content: "Billing Details",
+    cover: articleCoverImage,
+  },
+  {
+    id: 7,
+    section: 4,
+    title: "Billing Troubleshooting",
+    description: "Solving common billing issues",
+    url: "billing-troubleshooting",
+    videoUrl: "https://www.youtube.com/watch?v=7e90gBu4pas",
+    content: "Billing Troubleshooting",
+    cover: articleCoverImage,
+  },
+  {
+    id: 8,
+    section: 5,
+    title: "Advanced Billing Features",
+    description: "Exploring advanced billing options and features",
+    url: "advanced-billing-features",
+    videoUrl: "https://www.youtube.com/watch?v=7e90gBu4pas",
+    content: "Advanced Billing Features",
+    cover: articleCoverImage,
+  },
+  {
+    id: 9,
+    section: 6,
+    title: "Contacting Billing Support",
+    description: "How to get help with billing-related questions",
+    url: "contacting-billing-support",
+    videoUrl: "https://www.youtube.com/watch?v=7e90gBu4pas",
+    content: "Contacting Billing Support",
+    cover: articleCoverImage,
+  },
+  {
+    id: 10,
+    section: 7,
+    title: "Billing FAQ",
+    description: "Frequently asked questions about billing",
+    url: "billing-faq",
+    videoUrl: "https://www.youtube.com/watch?v=7e90gBu4pas",
+    content: "Billing FAQ",
+    cover: articleCoverImage,
+  },
+  {
+    id: 11,
+    section: 8,
+    title: "Managing Payment Methods",
+    description: "Adding, updating, and removing payment methods",
+    url: "managing-payment-methods",
+    videoUrl: "https://www.youtube.com/watch?v=7e90gBu4pas",
+    content: "Managing Payment Methods",
+    cover: articleCoverImage,
+  },
+  {
+    id: 12,
+    section: 9,
+    title: "Understanding Invoices",
+    description: "How to read and interpret your invoices",
+    url: "understanding-invoices",
+    videoUrl: "https://www.youtube.com/watch?v=7e90gBu4pas",
+    content: "Understanding Invoices",
+    cover: articleCoverImage,
+  },
+  {
+    id: 13,
+    section: 10,
+    title: "Requesting Billing Adjustments",
+    description: "How to request adjustments to your billing",
+    url: "requesting-billing-adjustments",
+    videoUrl: "https://www.youtube.com/watch?v=7e90gBu4pas",
+    content: "Requesting Billing Adjustments",
+    cover: articleCoverImage,
+  },
+  {
+    id: 14,
+    section: 11,
+    title: "Resolving Billing Disputes",
+    description: "Steps to take when you have a billing dispute",
+    url: "resolving-billing-disputes",
+    videoUrl: "https://www.youtube.com/watch?v=7e90gBu4pas",
+    content: "Resolving Billing Disputes",
+    cover: articleCoverImage,
+  },
+  {
+    id: 15,
+    section: 14,
+    title: "Billing Security",
+    description: "Keeping your billing information safe",
+    url: "billing-security",
+    videoUrl: "https://www.youtube.com/watch?v=7e90gBu4pas",
+    content: "Billing Security",
+    cover: articleCoverImage,
+  },
+];
+
+

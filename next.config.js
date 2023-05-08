@@ -11,6 +11,15 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: "/how-to-videos",
+        destination: "/how-to-videos/account",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

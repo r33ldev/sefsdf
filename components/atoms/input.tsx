@@ -21,6 +21,7 @@ interface InputProps {
   type?: string;
   size?: number;
   styles: CSSProperties;
+  borderTopAndBottom?: boolean;
 }
 
 export const Input = (props: InputProps) => {
