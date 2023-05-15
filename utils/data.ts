@@ -1,5 +1,6 @@
 import {
   Article,
+  QualityUpdate,
   Section,
   SuggestedArticleType,
   Support,
@@ -668,4 +669,14 @@ export const VIDEO_ARTICLES: VideoArticle[] = [
   },
 ];
 
-
+export const QUALITY_UPDATES: QualityUpdate[] = [
+  {
+    id: 1,
+    title: "Improvement to adventure API",
+    description:
+      "Use a password manager to store the unique and complex passwords that are hard to remember.",
+    url: "improvement-to-adventure-api",
+    content: "Improvement to adventure API",
+    createdAt: "January 14th, 2022",
+  },
+];

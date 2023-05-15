@@ -41,7 +41,7 @@ export type Qparams = {
     search?: string;
     layout?: string;
     article?: string;
-    key?: string | number ;
+    key?: string | number;
     other?: string;
   };
 };
@@ -62,7 +62,6 @@ export type SuggestedArticleType = {
   articles: Article[];
 };
 
-
 export type VideoArticle = {
   id: number;
   title: string;
@@ -72,5 +71,14 @@ export type VideoArticle = {
   section?: number;
   url: string;
   videoUrl: string;
-  cover?: StaticImageData
+  cover?: StaticImageData;
+};
+
+export type QualityUpdate = {
+  id: number;
+  title: string;
+  description: string;
+  content: string;
+  url: string;
+  createdAt: string;
 };

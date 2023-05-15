@@ -14,7 +14,6 @@ interface pageProps {
 
 function page({ params }: pageProps) {
   if (!params.article || !params?.category) return <div>404</div>;
-  console.log('article', params.article, params?.category)
   const type = params?.category === "how-to-videos" ? "videos" : "articles";
   const article = getArticle(params.article, type);
   if (!article) return <div>404</div>;

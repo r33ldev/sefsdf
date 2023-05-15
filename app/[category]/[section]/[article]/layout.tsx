@@ -30,11 +30,12 @@ export default function layout({ children, params }: pageProps) {
           style={{
             position: "relative",
             width: "100%",
+            height: "80vh",
           }}
         >
           <iframe
             width="100%"
-            height="484"
+            height="100%"
             sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             src="https://www.youtube.com/embed/zxiCNQ2BD08?rel=0"

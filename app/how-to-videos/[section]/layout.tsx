@@ -59,7 +59,7 @@ export default async function VideoSectionLayout({
             style={{ width: "80%", transition: "all 3s ease" }}
             className="w-full min-w-0  mt-4"
           >
-          <VideoFilter />
+            <VideoFilter />
             {children}
           </main>
         </Flex>

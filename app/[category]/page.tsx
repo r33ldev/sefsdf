@@ -11,7 +11,7 @@ import { Divider } from "@/components/atoms/divider";
 
 export default async function CategoryPage({ params }: Qparams) {
   const category = getCategory(params.category);
-  if (!category) return <div>404</div>;
+  if (!category) return <div>403</div>;
   let subCategories = getSubCategories(category);
   const repeatedCategories: Section[] = []
   for (let i = 0; i < 4; i++) {

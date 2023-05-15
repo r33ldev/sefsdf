@@ -81,7 +81,6 @@ function VideoFilter() {
   ];
   const [active1, setActive1] = useState(items1[0].label);
   const [active2, setActive2] = useState(items2[0].label);
-  console.log('logged', )
   return (
     <Wrapper>
       <Dropdown
@@ -92,9 +91,13 @@ function VideoFilter() {
       <Dropdown
         value={active2}
         items={items2}
-        onClick={({ key }) => setActive2(items2[Number(key) - 1].label) }
+        onClick={({ key }) => setActive2(items2[Number(key) - 1].label)}
       />
-      <HelpCenterSearchBar inputStyles={{ border: "none" }} width="30%" />
+      <HelpCenterSearchBar
+        inputStyles={{ border: "none" }}
+        width="30%"
+        handleSubmit={() => confirm(`wanna search??  `)}
+      />
     </Wrapper>
   );
 }

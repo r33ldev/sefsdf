@@ -22,6 +22,8 @@ interface InputProps {
   size?: number;
   styles: CSSProperties;
   borderTopAndBottom?: boolean;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const Input = (props: InputProps) => {

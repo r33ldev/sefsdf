@@ -9,14 +9,14 @@ interface PageWrapperProps {
 
 const Wrapper = styled.div`
   margin-top: 4rem;
-    overflow: hidden;
-  & img {
+  overflow: hidden;
+  &  img {
     border-radius: 1.5rem;
-    overflow: hidden;
+    // overflow: hidden;
     transition: all 0.3s ease-in-out;
     &:hover {
-
-        transform: scale(1.1);
+      height:4000px;
+      transform: scale(1.1);
     }
   }
 

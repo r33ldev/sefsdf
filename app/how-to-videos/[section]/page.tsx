@@ -1,5 +1,3 @@
-
-
 import { getSubCategories } from "@/app/[category]/utils/data";
 import { Qparams, VideoArticle } from "@/types";
 import { VIDEO_ARTICLES } from "@/utils/data";
@@ -19,7 +17,7 @@ function VideoSection({ params }: VideoSectionProps) {
       acc.push({
         ...article,
         url: `${subCategory?.url}/${article.url}`,
-      })
+      });
     }
     return acc;
   }, []);
@@ -31,7 +29,7 @@ function VideoSection({ params }: VideoSectionProps) {
   }
   return (
     <PageWrapper>
-     <Videos articles={repeatedArticles}/>
+      <Videos articles={repeatedArticles} />
     </PageWrapper>
   );
 }

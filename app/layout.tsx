@@ -33,7 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <meta rel="icon" content="/favicon.svg" property="og:image" />
       </Head>
       <body>
-        <div style={{ flex: 1 }}>
+        <div style={{ flex: 1, }}>
           <CheckinHelpCenterHeader />
           <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
         </div>

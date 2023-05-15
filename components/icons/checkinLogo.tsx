@@ -1,13 +1,13 @@
 import React from "react";
 
-function CheckinLogo() {
+function CheckinLogo({ size = 37 }: { size?: number }) {
   return (
     <div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="47"
-        height="37.65"
-        viewBox="0 0 47 37.65"
+        width={size}
+        height={size}
+        viewBox="0 0 37 37.65"
       >
         <g
           id="Group_11378"

@@ -18,7 +18,7 @@ export default function Home() {
         <HelpCenterSearchBar />
       </SectionLayout>
       <SectionLayout margin="7rem auto 10rem">
-        <Grid columns="repeat(4, 25%)" gap='0'>
+        <Grid columns="repeat(4, 25%)" gap="0">
           {SUPPORT_CATEGORY.map((category) => (
             <Link key={category.id} href={category.url}>
               <Flex gap="1.5rem" align="flex-start" width="85%">
@@ -46,7 +46,7 @@ export default function Home() {
       </SectionLayout>
 
       <SectionLayout>
-        <Grid columns="repeat(4, 25%)" gap='0'>
+        <Grid columns="repeat(4, 25%)" gap="0">
           {SUGGESTED_ARTICLES.map((section, index) => (
             <div key={index}>
               <Text text={section.title} type="h3" size={22} weight={800} />

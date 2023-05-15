@@ -44,7 +44,7 @@ export const ArticleFooter: React.FC<articleFooterProps> = ({ }) => {
         <FooterWrapper>
             <Flex justify='space-between'>
                 <section style={{ width: '100%' }}>
-                    <Flex align='center'>
+                    <Flex align='center' gap='1rem'>
                         <CheckinLogo />
                         <section>
                             <Text size="1.6rem" type="p" text="Checkin" weight={200} />

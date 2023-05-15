@@ -7,6 +7,15 @@ import play from "@/assets/image/play.svg";
 import Link from "@/components/atoms/link";
 import { Divider } from "@/components/atoms/divider";
 import Pagination from "@/components/molecules/pagination";
+import styled from "styled-components";
+
+const Wrapper = styled.div`
+  & .image {
+    &:hover {
+      height: 200px;
+    }
+  }
+`;
 
 function Videos({ articles }: { articles: VideoArticle[] }) {
   const [limit, _setLimit] = useState(9);
@@ -19,13 +28,13 @@ function Videos({ articles }: { articles: VideoArticle[] }) {
     setShownArticles(articles.slice((page - 1) * limit, page * limit));
   };
   return (
-    <>
+    <Wrapper>
       <Grid columns="repeat(3, 1fr)" gap="2rem">
         {shownArticles.map((article) => (
-          <Link href={`${article.url}`} key={article.id}>
+          <Link href={`/${article.url}`} key={article.id}>
             <div style={{ position: "relative" }} title={article.title}>
               {article?.cover && (
-                <img src={article.cover.src} alt={article.title} />
+                <img src={article.cover.src} alt={article.title} className="image"/>
               )}
               <figure>
                 <img src={play.src} alt="" height={"200px"} />
@@ -52,8 +61,13 @@ function Videos({ articles }: { articles: VideoArticle[] }) {
         ))}
       </Grid>
       <Divider margin="2rem 0" />
-      <Pagination onChange={onChange} total={articles.length} current={page} />
-    </>
+      <Pagination
+        onChange={onChange}
+        total={articles.length}
+        current={page}
+        limit={limit}
+      />
+    </Wrapper>
   );
 }
 

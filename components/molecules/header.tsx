@@ -36,7 +36,7 @@ export default function CheckinHelpCenterHeader() {
       margin="2rem auto"
     >
       <a href="/">
-        <Flex align="flex-end">
+        <Flex align="flex-end" gap="1rem">
           <CheckinLogo />
           <Text size="2.2rem" color="#0E689D" type="p" text="Usecheckin" />
         </Flex>

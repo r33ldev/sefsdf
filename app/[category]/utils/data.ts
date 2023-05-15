@@ -1,5 +1,6 @@
 import { Article, Qparams, Section, Support } from "@/types";
 import {
+  QUALITY_UPDATES,
   SUPPORT_ARTICLES,
   SUPPORT_CATEGORY,
   SUPPORT_SUBCATEGORY,
@@ -48,10 +49,11 @@ export const suggestedArticleUrl = cache((article: Article) => {
 
 export const getArticle = cache(
   (params: Qparams["params"]["article"], type?: string) => {
-    if (type === "videos") {
-      console.log('sdfsdf', params);
+    if (type === "videos")
       return VIDEO_ARTICLES.find((article) => article?.url === params);
-    }
+
+    if (type === "updates") 
+    return QUALITY_UPDATES.find((article) => article?.url === params);
     return SUPPORT_ARTICLES.find((article) => article?.url === params);
   }
 );
