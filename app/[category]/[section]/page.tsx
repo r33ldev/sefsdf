@@ -10,6 +10,7 @@ import ListingTypeTab from "@/components/molecules/listingTypeTab";
 import Flex from "@/components/atoms/flex";
 import ArrowRight from "@/components/icons/arrowRight";
 import SectionAside from "@/components/molecules/sectionAside";
+import NotFoundPage from "@/app/404";
 
 const TextLink = ({ text, href }: { text: string; href: string }) => (
   <Link href={href}>
@@ -20,14 +21,14 @@ const TextLink = ({ text, href }: { text: string; href: string }) => (
 
 
 function Section({ params }: Qparams) {
-  if (!params.section) return <div>404</div>;
+  if (!params.section) return <NotFoundPage/>;
   const category = getCategory(params.category);
-  if (!category) return <div>404</div>;
+  if (!category) return <NotFoundPage/>;
   const subCategories = getSubCategories(category);
   const subCategory = subCategories.find(
     (subCategory) => subCategory.url.split("/")[2] === params.section
   );
-  if (!subCategory) return <div>404</div>;
+  if (!subCategory) return <NotFoundPage/>;
   const articles = getArticles(subCategory);
   return (
     <>

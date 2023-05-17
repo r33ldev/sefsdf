@@ -6,17 +6,32 @@ import searchIcon from "../../assets/image/search.svg";
 import { Input } from "../atoms/input";
 import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import Spinner from "../icons/spinner";
 
 const InputAddonWrapper = styled.div<{ margin: string }>`
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
   width: 65%;
   position: relative;
-  & > img {
+  & > img,
+  & > svg {
     position: absolute;
+  }
+  & > img {
+    cursor: pointer;
     right: 2rem;
     top: 1.5rem;
-    cursor: pointer;
-    // z-index: -1;
-    pointer-events: none;
+  }
+  & > svg {
+    right: 1.4rem;
+    top: 1.1rem;
+    animation: spin 1s linear infinite;
   }
   & > div {
     position: absolute;
@@ -45,12 +60,14 @@ export default function HelpCenterSearchBar({
 
   const search = searchParams.get("term");
   const [value, setValue] = useState(search || "");
+  const [submitted, setSubmitted] = useState(false);
   const router = useRouter();
 
   function handleSearch() {
-    console.log("handle search");
     if (handleSubmit) return handleSubmit();
+    setSubmitted(true);
     value.length > 0 && router.push(`/search?term=${value}`);
+    setSubmitted(false);
   }
 
   return (
@@ -63,7 +80,6 @@ export default function HelpCenterSearchBar({
         placeholder="Search"
         styles={{
           padding: "0 2rem",
-          zIndex: '-1',
           ...inputStyles,
         }}
         size={15}
@@ -71,11 +87,11 @@ export default function HelpCenterSearchBar({
         onChange={(e) => setValue(e.target.value)}
       />
       <div />
-      <Image
-        src={searchIcon}
-        alt="search icon"
-        onClick={() => console.log("hihihi")}
-      />
+      {submitted ? (
+        <Spinner />
+      ) : (
+        <Image src={searchIcon} alt="search icon" onClick={handleSearch} />
+      )}
     </InputAddonWrapper>
   );
 }

@@ -1,6 +1,7 @@
 import { Qparams } from "@/types";
 import { Metadata } from "next";
 import { getCategory } from "./utils/data";
+import NotFoundPage from "../404";
 
 interface TestLayoutProps {
   children: React.ReactNode;
@@ -23,10 +24,6 @@ export default async function CategoryLayout({
   params,
   children,
 }: TestLayoutProps) {
-  if (!params.category) return <div>404</div>;
-  return (
-    <div>
-      {children}
-    </div>
-  );
+  if (!params.category) return <NotFoundPage />;
+  return <div>{children}</div>;
 }

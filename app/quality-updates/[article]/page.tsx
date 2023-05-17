@@ -1,3 +1,4 @@
+import NotFoundPage from "@/app/404";
 import { getArticle } from "@/app/[category]/utils/data";
 import Article from "@/components/atoms/article";
 import Flex from "@/components/atoms/flex";
@@ -13,7 +14,7 @@ interface pageProps {
 
 function UpdateArticle({ params }: pageProps) {
   const article = getArticle(params.article, "updates");
-  if (!article) return <div>404</div>;
+  if (!article) return <NotFoundPage />;
   console.log(article);
   return (
     <Flex justify="space-between" margin="2rem 0">

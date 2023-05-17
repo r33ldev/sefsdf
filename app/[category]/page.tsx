@@ -8,16 +8,17 @@ import { getCategory, getSubCategories } from "./utils/data";
 import SectionLayout from "@/components/molecules/sectionLayout";
 import HelpCenterSearchBar from "@/components/molecules/helpCenterSearchBar";
 import { Divider } from "@/components/atoms/divider";
+import NotFoundPage from "../404";
 
 export default async function CategoryPage({ params }: Qparams) {
   const category = getCategory(params.category);
-  if (!category) return <div>403</div>;
+  if (!category) return <NotFoundPage />;
   let subCategories = getSubCategories(category);
-  const repeatedCategories: Section[] = []
+  const repeatedCategories: Section[] = [];
   for (let i = 0; i < 4; i++) {
     subCategories.forEach((subCategory) => {
-      repeatedCategories.push(subCategory)
-    })
+      repeatedCategories.push(subCategory);
+    });
   }
   return (
     <div>
@@ -30,7 +31,6 @@ export default async function CategoryPage({ params }: Qparams) {
       </SectionLayout>
       <Divider />
       <SectionLayout margin="4rem auto">
-
         <Grid columns="repeat(4, 1fr)">
           {repeatedCategories.map((subCategory) => (
             <Link href={subCategory.url} key={subCategory.id}>
