@@ -31,7 +31,7 @@ function ArticleMain({
     }
     setTocList(newList);
     setActive(newList[0]);
-  }, []);
+  }, [article]);
   return (
     <>
       <div style={{ width: "60%" }}>

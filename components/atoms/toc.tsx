@@ -46,9 +46,8 @@ export const TOC: React.FC<tocProps> = ({ active, setActive, tocList }) => {
       />
 
       {tocList.map((item: any, id: number) => (
-        <a href={`#${item.id}`}>
+        <a href={`#${item.id}`} key={id}>
           <TocItem
-            key={id}
             active={active?.text === item.text}
             onClick={() => setActive(tocList[id])}
           >
