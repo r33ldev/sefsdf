@@ -53,3 +53,7 @@ body {
 img {
   pointer-events: none;
 }
+
+a {
+  behavior: smooth;
+}

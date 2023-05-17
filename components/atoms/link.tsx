@@ -5,6 +5,7 @@ interface linkProps {
   children?: React.ReactNode;
   text?: string;
   className?: string;
+  scroll?: boolean;
 }
 
 export const Link: React.FC<linkProps> = (props) => {

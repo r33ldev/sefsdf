@@ -3,10 +3,9 @@
 import React, { useEffect, useState } from "react";
 import Text from "./text";
 import styled from "styled-components";
+import Link from "./link";
 
-interface tocProps {
-    article?: string
-}
+
 
 const Wrapper = styled.div`
   width: 30%;
@@ -18,45 +17,46 @@ const Wrapper = styled.div`
 `;
 
 const TocItem = styled.div<{ active: boolean }>`
-    font-size: 1.6rem;
-    padding: 1.5rem;
+  font-size: 1.6rem;
+  padding: 1.5rem;
 
-    background: ${(props: any) => props.active ? '#f5f5f5' : 'transparent'};
+  background: ${(props: any) => (props.active ? "#f5f5f5" : "transparent")};
 
-    &:hover {
-        cursor: pointer;
-        background: #f5f5f5;
-        border-radius: 8px;
-    }
-`
+  &:hover {
+    cursor: pointer;
+    background: #f5f5f5;
+    border-radius: 8px;
+  }
+`;
 
-export const TOC: React.FC<tocProps> = ({ }) => {
+interface tocProps {
+  active: any;
+  setActive: any;
+  tocList: any;
+}
 
+export const TOC: React.FC<tocProps> = ({ active, setActive, tocList }) => {
+  return (
+    <Wrapper>
+      <Text
+        type="p"
+        text="In this article"
+        size={"2.4rem"}
+        styles={{ padding: "1rem" }}
+      />
 
-    const [tocList, setTocList] = useState<any>([]);
-    const [active, setActive] = useState<any>(tocList[0]);
-    useEffect(() => {
-        const headings = document.querySelectorAll('h1, h2');
-        const newList = [];
-
-        for (const heading of headings) {
-            newList.push({
-                id: heading.id,
-                text: (heading as HTMLElement).innerText,
-                isSubsection: heading.tagName.toLowerCase() === 'h2',
-            });
-        }
-        setTocList(newList);
-        setActive(newList[0])
-    }, []);
-    return (
-        <Wrapper>
-            <Text type="h2" text="In this article" size={"2.4rem"} styles={{ padding: '1rem' }} />
-
-            {tocList.map((item: any, id: number) => (
-                <TocItem key={id} active={active?.text === item.text} onClick={() => setActive(tocList[id])}>{item.text}</TocItem>
-            ))}
-        </Wrapper>
-    );
+      {tocList.map((item: any, id: number) => (
+        <a href={`#${item.id}`}>
+          <TocItem
+            key={id}
+            active={active?.text === item.text}
+            onClick={() => setActive(tocList[id])}
+          >
+            {item.text}
+          </TocItem>
+        </a>
+      ))}
+    </Wrapper>
+  );
 };
 export default TOC;

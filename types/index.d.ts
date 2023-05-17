@@ -46,7 +46,7 @@ export type Qparams = {
   };
 };
 
-export type Article = {
+export type ArticleType = {
   id: number;
   title: string;
   description: string;
@@ -59,7 +59,7 @@ export type Article = {
 export type SuggestedArticleType = {
   id: number;
   title: string;
-  articles: Article[];
+  articles: ArticleType[];
 };
 
 export type VideoArticle = {

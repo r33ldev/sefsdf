@@ -1,4 +1,4 @@
-import { Article, Qparams, Section, Support } from "@/types";
+import { ArticleType, Qparams, Section, Support } from "@/types";
 import {
   QUALITY_UPDATES,
   SUPPORT_ARTICLES,
@@ -37,7 +37,7 @@ export const getArticles = cache((section: Section) => {
   }));
 });
 
-export const suggestedArticleUrl = cache((article: Article) => {
+export const suggestedArticleUrl = cache((article: ArticleType) => {
   const category = SUPPORT_CATEGORY.find(
     (category) => category.id === article.category
   );
@@ -52,8 +52,8 @@ export const getArticle = cache(
     if (type === "videos")
       return VIDEO_ARTICLES.find((article) => article?.url === params);
 
-    if (type === "updates") 
-    return QUALITY_UPDATES.find((article) => article?.url === params);
+    if (type === "updates")
+      return QUALITY_UPDATES.find((article) => article?.url === params);
     return SUPPORT_ARTICLES.find((article) => article?.url === params);
   }
 );

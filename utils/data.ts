@@ -1,5 +1,5 @@
 import {
-  Article,
+  ArticleType,
   QualityUpdate,
   Section,
   SuggestedArticleType,
@@ -140,7 +140,7 @@ export const SUPPORT_SUBCATEGORY: Section[] = [
   },
 ];
 
-export const SUPPORT_ARTICLES: Article[] = [
+export const SUPPORT_ARTICLES: ArticleType[] = [
   {
     id: 1,
     category: 1,
