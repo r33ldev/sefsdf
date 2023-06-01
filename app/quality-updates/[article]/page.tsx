@@ -12,11 +12,7 @@ interface pageProps {
 function UpdateArticle({ params }: pageProps) {
   const article = getArticle(params.article, "updates");
   if (!article) return <NotFoundPage />;
-  return (
-    <Flex justify="space-between" margin="2rem 0">
-      <ArticleMain article={{ ...article, body: SAMPLE_ARTICLE }} />
-    </Flex>
-  );
+  return <ArticleMain article={{ ...article, body: SAMPLE_ARTICLE }} />;
 }
 
 export default UpdateArticle;

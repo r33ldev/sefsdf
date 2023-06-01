@@ -1,9 +1,11 @@
+"use client";
 import React from "react";
-import { Divider } from "../atoms/divider";
+import { Divider } from "atom/divider";
 import { Section, Support } from "@/types";
-import Link from "../atoms/link";
-import Flex from "../atoms/flex";
-import Text from "../atoms/text";
+import Link from "atom/link";
+import Flex from "atom/flex";
+import Text from "atom/text";
+import { useScreenResolution } from "hook/useScreenResolution";
 
 function SectionAside({
   subCategories,
@@ -12,8 +14,9 @@ function SectionAside({
   subCategories: Section[];
   subCategory: Support["name"];
 }) {
+  const { isMobile } = useScreenResolution();
   return (
-    <aside style={{ width: "15%" }}>
+    <aside style={{ width: isMobile ? "35%" : "15%" }}>
       <Text text="All" type="h1" size="1.5rem" />
       <Divider margin="1rem 0" />
       {subCategories.map((category) => {

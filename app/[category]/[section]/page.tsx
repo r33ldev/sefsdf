@@ -18,17 +18,15 @@ const TextLink = ({ text, href }: { text: string; href: string }) => (
   </Link>
 );
 
-
-
 function Section({ params }: Qparams) {
-  if (!params.section) return <NotFoundPage/>;
+  if (!params.section) return <NotFoundPage />;
   const category = getCategory(params.category);
-  if (!category) return <NotFoundPage/>;
+  if (!category) return <NotFoundPage />;
   const subCategories = getSubCategories(category);
   const subCategory = subCategories.find(
     (subCategory) => subCategory.url.split("/")[2] === params.section
   );
-  if (!subCategory) return <NotFoundPage/>;
+  if (!subCategory) return <NotFoundPage />;
   const articles = getArticles(subCategory);
   return (
     <>
@@ -42,14 +40,22 @@ function Section({ params }: Qparams) {
       <Divider margin="0" />
       <ListingTypeTab />
       <SectionLayout margin="4rem auto">
-        <Flex gap='4rem' overflow="unset">
-          <SectionAside subCategories={subCategories} subCategory={subCategory.name} />
-          <main style={{ width: '40%' }}>
-            <Text text="Getting started" type="h1" size="2.3rem" styles={{ marginBottom: '1rem' }} />
+        <Flex gap="4rem" overflow="unset">
+          <SectionAside
+            subCategories={subCategories}
+            subCategory={subCategory.name}
+          />
+          <main style={{ width: "40%" }}>
+            <Text
+              text="Getting started"
+              type="h1"
+              size="2.3rem"
+              styles={{ marginBottom: "1rem" }}
+            />
             {articles.map((article) => (
               <div key={article.id}>
-                <Flex align="center" gap='.5rem'>
-                  <TextLink text={article.title} href={article.url}  />
+                <Flex align="center" gap=".5rem">
+                  <TextLink text={article.title} href={article.url} />
                   <ArrowRight />
                 </Flex>
                 <Divider margin="1.2rem 0" />

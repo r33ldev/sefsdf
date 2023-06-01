@@ -1,6 +1,6 @@
 import React from "react";
 
-function CheckinLogo({ size = 37 }: { size?: number }) {
+function CheckinLogo({ size = 50 }: { size?: number }) {
   return (
     <div>
       {/* <svg
@@ -110,8 +110,8 @@ function CheckinLogo({ size = 37 }: { size?: number }) {
       </svg> */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="50"
-        height="50"
+        width={size}
+        height={size}
         viewBox="0 0 56 56"
       >
         <g

@@ -29,9 +29,9 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
+      <head>
         <meta rel="icon" content="/favicon.svg" property="og:image" />
-      </Head>
+      </head>
       <body>
         <div style={{ flex: 1, }}>
           <CheckinHelpCenterHeader />

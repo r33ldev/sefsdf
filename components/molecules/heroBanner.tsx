@@ -1,8 +1,9 @@
-'use client'
+"use client";
 
 import styled from "styled-components";
 import Text from "../atoms/text";
 import heroBanner from "../../assets/image/home-banner.png";
+import { useScreenResolution } from "hook/useScreenResolution";
 
 const Section = styled.section`
   width: 100%;
@@ -17,12 +18,13 @@ const Section = styled.section`
 `;
 
 export default function HelpCenterHeroBanner() {
+  const { isMobile } = useScreenResolution();
   return (
     <Section>
       <Text
         text="Help center"
         type="p"
-        size="6.5rem"
+        size={isMobile ? "5.5rem" : "6.5rem"}
         weight="800"
         color="white"
       />

@@ -2,7 +2,7 @@
 import styled from "styled-components";
 import Flex from "../atoms/flex";
 import CheckinLogo from "../icons/checkinLogo";
-import Text from "../atoms/text";
+import { useScreenResolution } from "hook/useScreenResolution";
 
 const GuestOrHostButton = styled.div`
   width: 32rem;
@@ -18,6 +18,15 @@ const GuestOrHostButton = styled.div`
     height: 100%;
     display: flex;
     align-items: center;
+
+    @media (max-width: 768px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 4rem;
   }
 `;
 
@@ -28,19 +37,22 @@ const Divider = styled.div`
 `;
 
 export default function CheckinHelpCenterHeader() {
+  const { isMobile } = useScreenResolution();
   return (
     <Flex
       align="center"
       justify="space-between"
       width="85vw"
       margin="2rem auto"
+      gap="5rem"
     >
+      {/* {!isMobile && ( */}
       <a href="/">
         <Flex align="flex-end" gap="1rem">
-          <CheckinLogo />
-          {/* <Text size="2.2rem" color="#0E689D" type="p" text="Usecheckin" /> */}
+          <CheckinLogo size={isMobile ? 35 : 50} />
         </Flex>
       </a>
+      {/* )} */}
       <GuestOrHostButton>
         <a href="https://usecheckin.com" target="_blank">
           Book reservation

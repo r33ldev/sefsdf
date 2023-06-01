@@ -9,6 +9,7 @@ import Flex from "../atoms/flex";
 import Pagination from "./pagination";
 import { useState } from "react";
 import { ArticleType } from "@/types";
+import { useScreenResolution } from "hook/useScreenResolution";
 
 export default function SearchResults() {
   const searchParams = useSearchParams();
@@ -31,8 +32,9 @@ export default function SearchResults() {
     setPage(page);
     setShownArticles(articles.slice((page - 1) * limit, page * limit));
   };
+  const { isMobile } = useScreenResolution();
   return (
-    <main style={{ width: "70%" }}>
+    <main style={{ width: isMobile ? "100%" : "70%" }}>
       {articles.length ? (
         <>
           {shownArticles.map((article) => {

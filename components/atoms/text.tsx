@@ -10,6 +10,7 @@ interface textProps {
   weight?: CSSProperties["fontWeight"];
   underline?: string;
   styles?: CSSProperties;
+  whiteSpace?: CSSProperties["whiteSpace"];
 }
 
 export const Text: React.FC<textProps> = ({
@@ -19,12 +20,14 @@ export const Text: React.FC<textProps> = ({
   size,
   weight,
   underline,
+  whiteSpace,
   styles = {},
 }) => {
-  styles.color = color;
+  styles.color = color || "#212121";
   styles.fontSize = size;
   styles.fontWeight = weight;
   styles.textDecoration = underline;
+  styles.whiteSpace = whiteSpace;
   if (type === "p") return <p style={{ ...styles }}>{text}</p>;
   if (type === "span") return <span style={{ ...styles }}> {text}</span>;
   if (type === "h1") return <h1 style={{ ...styles }}>{text}</h1>;

@@ -6,6 +6,8 @@ import TOC from "@/components/atoms/toc";
 import { ArticleType } from "@/types";
 import { VideoArticle } from "@/types";
 import React, { useEffect, useState } from "react";
+import Flex from "./flex";
+import { useScreenResolution } from "hook/useScreenResolution";
 
 type ArticleMainType<T> = Partial<T> & { body: string };
 
@@ -32,10 +34,15 @@ function ArticleMain({
     setTocList(newList);
     setActive(newList[0]);
   }, [article]);
+  const { isMobile } = useScreenResolution();
   return (
-    <>
-      <div style={{ width: "60%" }}>
-        <Text type="p" text={article.title || ""} size={"3.6rem"} />
+    <Flex justify="space-between" margin="2rem 0">
+      <div style={{ width: isMobile ? "100%" : "60%" }}>
+        <Text
+          type="p"
+          text={article.title || ""}
+          size={isMobile ? "2.9rem" : "3.6rem"}
+        />
         <Article>
           <article
             className="prose lg:prose-xl"
@@ -45,8 +52,10 @@ function ArticleMain({
           </article>
         </Article>
       </div>
-      <TOC active={active} setActive={setActive} tocList={tocList} />
-    </>
+      {!isMobile && (
+        <TOC active={active} setActive={setActive} tocList={tocList} />
+      )}
+    </Flex>
   );
 }
 

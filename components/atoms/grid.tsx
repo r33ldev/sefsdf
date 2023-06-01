@@ -12,6 +12,11 @@ const GridWrapper = styled.div<{ columns: string; gap: string }>`
   grid-template-columns: ${(props) => props.columns};
   grid-gap: ${(props) => props?.gap || "5rem"};
   width: 100%;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
   
 `;
 

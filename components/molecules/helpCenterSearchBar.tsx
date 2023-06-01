@@ -7,6 +7,7 @@ import { Input } from "../atoms/input";
 import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Spinner from "../icons/spinner";
+import { useScreenResolution } from "hook/useScreenResolution";
 
 const InputAddonWrapper = styled.div<{ margin: string }>`
   @keyframes spin {
@@ -69,12 +70,12 @@ export default function HelpCenterSearchBar({
     value.length > 0 && router.push(`/search?term=${value}`);
     setSubmitted(false);
   }
-
+  const { isMobile } = useScreenResolution();
   return (
     <InputAddonWrapper
       onKeyUp={(e) => e.key === "Enter" && handleSearch()}
       margin={margin}
-      style={{ width }}
+      style={{ width: isMobile ? "100%" : width }}
     >
       <Input
         placeholder="Search"

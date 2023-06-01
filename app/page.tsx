@@ -22,7 +22,12 @@ export default function Home() {
           {SUPPORT_CATEGORY.map((category) => (
             <Link key={category.id} href={category.url}>
               <Flex gap="1.5rem" align="flex-start" width="85%">
-                <Image src={category.icon} alt={category.name} height={35} />
+                <Image
+                  src={category.icon}
+                  alt={category.name}
+                  // width={40}
+                  height={50}
+                />
                 <div>
                   <Text
                     text={category.name}
@@ -35,8 +40,7 @@ export default function Home() {
                     text={category.description}
                     type="p"
                     size={15}
-                    color="#363636"
-                    weight={100}
+                    weight={300}
                   />
                 </div>
               </Flex>
@@ -57,9 +61,8 @@ export default function Home() {
                       key={index}
                       text={article.title}
                       type="p"
-                      size={15}
-                      color="#363636"
-                      weight={100}
+                      size={17}
+                      weight={200}
                     />
                     <ArrowRight />
                   </Flex>
