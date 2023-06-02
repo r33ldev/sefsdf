@@ -1,7 +1,7 @@
 import { Divider } from "@/components/atoms/divider";
 import SectionLayout from "@/components/molecules/sectionLayout";
 import { Qparams } from "@/types";
-import SearchHero from "molecule/searchHero";
+import SectionHero from "molecule/sectionHero";
 
 interface pageProps {
   children: React.ReactNode;
@@ -22,7 +22,10 @@ export default async function SearchLayout({ children }: pageProps) {
   return (
     <div>
       <SectionLayout>
-        <SearchHero />
+        <SectionHero
+          description="Checkin Support - search results"
+          title="Search Result"
+        />
       </SectionLayout>
       <Divider margin="0" />
       {children}

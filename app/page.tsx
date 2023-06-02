@@ -17,7 +17,7 @@ export default function Home() {
       <SectionLayout margin="4rem auto">
         <HelpCenterSearchBar />
       </SectionLayout>
-      <SectionLayout margin="7rem auto 10rem">
+      <SectionLayout margin="5rem auto 7rem">
         <Grid columns="repeat(4, 25%)" gap="0">
           {SUPPORT_CATEGORY.map((category) => (
             <Link key={category.id} href={category.url}>

@@ -90,22 +90,6 @@ export const SUPPORT_SUBCATEGORY: Section[] = [
     icon: section4,
   },
   {
-    name: "guide 1",
-    id: 5,
-    description: "troubleshooting",
-    url: "guide-1",
-    category: 2,
-    icon: section1,
-  },
-  {
-    name: "Troubleshooting 1",
-    id: 6,
-    description: "troubleshooting",
-    url: "troubleshooting-1",
-    category: 2,
-    icon: section2,
-  },
-  {
     name: "Troubleshooting",
     id: 7,
     description: "troubleshooting",
@@ -290,6 +274,180 @@ export const SUPPORT_ARTICLES: ArticleType[] = [
     content:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
     url: "our-safety-concerns",
+  },
+
+  {
+    id: 16,
+    category: 1,
+    section: 3,
+    title: "Unlocking Affordable Adventures",
+    description:
+      "Unlocking Affordable Adventures: A Guide to Budget-Friendly Travel with a Revolutionary AI-Driven Global Platform",
+    content: `<h2><b>Unlocking Affordable Adventures: A Guide to Budget-Friendly Travel with a Revolutionary AI-Driven Global Platform</b></h2>
+<p><b></b></p>
+<p><span style="font-weight: 400;">Are you planning your next vacation but concerned about going over budget? With the launch of Usecheckin.com the first global AI traveling and tourism platform, budget-friendly travel is now easier than ever before. This platform is five times better than other online travel agencies, as it allows travelers to reserve accommodations, cars, adventures, and connect with other travelers all on the same platform.</span></p>
+<p><span style="font-weight: 400;">So how can you plan a budget-friendly vacation using Usecheckin.com? Here are some tips to get you started:</span></p>
+<ol>
+<li><span style="font-weight: 400;"> Set a budget: Before you begin planning your trip, it's important to set a budget. This will help you determine how much you can spend on accommodations, transportation, activities, and meals. The Usecheckin.com platform offers a budget planner tool that can help you stay on track.</span></li>
+</ol>
+<ol start="2">
+<li><span style="font-weight: 400;"> Book your accommodations: One of the great things about this new platform is that you can reserve accommodations directly through the platform. Whether you're looking for a budget-friendly hostel or a luxurious hotel, there are options available for every budget.</span></li>
+</ol>
+<ol start="3">
+<li><span style="font-weight: 400;"> Rent a car: If you're planning on exploring your destination, renting a car can be a budget-friendly option. The Usecheckin.com platform allows you to rent a car directly through the platform, with options available for every budget.</span></li>
+</ol>
+<ol start="4">
+<li><span style="font-weight: 400;"> Find adventure activities: No vacation is complete without some adventure activities. The Usecheckin.com platform offers a variety of activities, such as hiking, snorkeling, and zip-lining, at affordable prices.</span></li>
+</ol>
+<ol start="5">
+<li><span style="font-weight: 400;"> Connect with other travelers: Traveling with others can be a great way to save money, as you can split the cost of accommodations and transportation. The Usecheckin.com platform allows you to connect with other travelers, so you can find a travel buddy or join a group tour.</span></li>
+</ol>
+<p><span style="font-weight: 400;">By using Usecheckin.com the first global AI traveling and tourism platform, you can plan a budget-friendly vacation without sacrificing quality or experiences. With the ability to reserve accommodations, cars, adventures, and connect with other travelers all on the same platform, you can save time and money while still having the trip of a lifetime.</span></p>`,
+    url: "unlocking-affordable-adventures",
+  },
+  {
+    id: 17,
+    category: 1,
+    section: 3,
+    title: "Solo Travel Made Safe and Seamless",
+    description:
+      "Solo Travel Made Safe and Seamless: Embrace Usecheckin.com for Unforgettable Solo Adventures in 2023",
+    content: `<div>
+<h2><strong>Solo Travel Made Safe and Seamless: Embrace Usecheckin.com for Unforgettable Solo Adventures in 2023</strong></h2>
+</div>
+<p><span style="font-weight: 400;">Solo travel has become increasingly popular over the years, as more and more people seek to explore the world on their own terms. However, traveling solo can be daunting, especially for those who are new to it. Fortunately, there are now many tools and resources available to solo travelers, especially the travelers' favorite Usecheckin.com platform. In this blog post, we'll explore why solo travelers should use Usecheckin.com as their go-to platform for booking solo trips, highlighting its unique features and benefits.</span></p>
+<p><span style="font-weight: 400;">First, let's take a look at what makes Usecheckin.com the travelers favorite. Usecheckin.com is a global AI traveling and tourism platform that offers a range of features and services to help travelers plan their trips. It is a one-stop-shop for booking flights, accommodations, cars, adventures, and more. What sets Usecheckin.com apart from other travel platforms is its focus on solo travelers. It is designed to cater specifically to the needs and preferences of solo travelers, making it an ideal choice for those looking to travel alone.</span></p>
+<p><span style="font-weight: 400;">One of the standout features of Usecheckin.com is its app translation in over 50 languages. This is a huge advantage for solo travelers, especially those who are traveling to countries where they don't speak the language. With Usecheckin.com, travelers can easily navigate the platform and book their trips, no matter where they are in the world.</span></p>
+<p><span style="font-weight: 400;">Another key benefit of using Usecheckin.com is its <strong>focus on safety</strong>. Solo travelers can feel vulnerable when traveling alone, but Usecheckin.com offers a range of safety features to help put their minds at ease. For example, the platform provides safety tips for guests, which cover everything from how to avoid pickpockets to what to do in case of an emergency. Usecheckin.com also has a 24-hour Safety Line that travelers can call in case of an emergency, as well as an emergency contact feature that allows travelers to easily share their travel plans with friends and family.</span></p>
+<p><span style="font-weight: 400;">Now, let's take a look at some of the top destinations for solo travelers in 2023, as identified by Usecheckin.com. These destinations are based on a range of factors, including safety, affordability, and accessibility.</span></p>
+<p><span style="font-weight: 400;"><strong>Thailand</strong> - Thailand is a popular destination for solo travelers, thanks to its beautiful beaches, delicious food, and friendly locals. It's also affordable, making it a great choice for budget-conscious travelers.</span></p>
+<p><span style="font-weight: 400;"><strong>Japan</strong> - Japan is known for its unique culture and stunning landscapes. It's also considered one of the safest countries in the world, making it a great choice for solo travelers.</span></p>
+<p><span style="font-weight: 400;"><strong>Italy</strong> - Italy is a popular destination for solo travelers, thanks to its rich history, beautiful architecture, and delicious food. It's also a great destination for solo travelers who love art and culture.</span></p>
+<p><span style="font-weight: 400;"><strong>Spain</strong> - Spain is known for its vibrant culture, delicious food, and beautiful beaches. It's also one of the most affordable destinations in Europe, making it a great choice for budget-conscious travelers.</span></p>
+<p><span style="font-weight: 400;"><strong>Australia</strong> - Australia is a popular destination for solo travelers, thanks to its beautiful landscapes, friendly locals, and laid-back culture. It's also one of the safest countries in the world, making it a great choice for solo travelers.</span></p>
+<p><span style="font-weight: 400;"><strong>Costa Rica</strong> - Costa Rica is a popular destination for solo travelers who love adventure and nature. It's known for its beautiful beaches, lush rainforests, and abundant wildlife.</span></p>
+<p><span style="font-weight: 400;"><strong>Portugal</strong> - Portugal is a great destination for solo travelers who love history, architecture, and beautiful landscapes. It's also one of the most affordable destinations in Europe.</span></p>
+<p><span style="font-weight: 400;"><strong>Vietnam</strong> - Vietnam is a popular destination for solo travelers, thanks to its rich history, beautiful landscapes, and delicious food. It's also one of the most affordable destinations in Asia.</span></p>
+<h4><span style="font-weight: 400;"><strong>Canada</strong> - Canada is a great destination for solo travelers.</span></h4>`,
+    url: "solo-travel-made-safe-and-seamless",
+  },
+  {
+    id: 18,
+    category: 1,
+    section: 3,
+    title: "Unlocking Unforgettable Group Travel Experiences",
+    description:
+      "Unlocking Unforgettable Group Travel Experiences: Discover the Benefits of Usecheckin.com for Families and Friends",
+    content: `<div>
+<h2><strong>Unlocking Unforgettable Group Travel Experiences: Discover the Benefits of Usecheckin.com for Families and Friends</strong></h2>
+</div>
+<p><span style="font-weight: 400;">Traveling is a fantastic way to spend time with loved ones, explore new places, and create lasting memories. However, planning and booking a trip can often be a daunting and overwhelming task, especially with the plethora of online booking platforms available. </span></p>
+<p><span style="font-weight: 400;">Among these platforms, Usecheckin.com stands out as the first global AI one-stop-shop traveling and tourism platform that offers a unique experience to its users. In this blog post, we will explore the reasons why families, friends, and other travelers find more value, more space, and more fun when traveling on Usecheckin.com compared to other online platforms.</span></p>
+<h2><strong>Easy to Navigate User Interface</strong></h2>
+<p><span style="font-weight: 400;">One of the most significant advantages of Usecheckin.com is its user-friendly interface. The platform is designed to be simple and easy to use, making it accessible to everyone, including those who are not tech-savvy. </span></p>
+<p><span style="font-weight: 400;">The platform's design is intuitive, and users can quickly find the information they need with just a few clicks. The search filters and sorting options are customizable, making it easier for travelers to find the perfect accommodations and activities that match their preferences.</span></p>
+<h2><strong>Wide Range of Accommodations, Cars and Adventures</strong></h2>
+<p><span style="font-weight: 400;">Usecheckin.com provides a wide range of accommodations, cars, adventures and social connection options, making it easy for families, friends, and other travelers to find what they need. </span></p>
+<p><span style="font-weight: 400;">On Usecheckin.com you will find numerous hotels, vacation rentals, short term rentals and other types of accommodation and car providers, ensuring that travelers have a wide range of options to choose from. In addition, Usecheckin.com has an extensive collection of activities that are suitable for families, couples, solo travelers, and groups.</span></p>
+<h2><strong>Competitive Prices and Offers</strong></h2>
+<p><span style="font-weight: 400;">Another significant advantage of Usecheckin.com is its competitive pricing. The platform offers some of the best prices for accommodations, cars and adventures, ensuring that travelers get the most value for their money. </span></p>
+<p><span style="font-weight: 400;">Usecheckin.com also regularly offers discounts and promotions, making it even more affordable for travelers to book their trips.</span></p>
+<h2><strong>Personalized Recommendations</strong></h2>
+<p><span style="font-weight: 400;">Usecheckin.com uses AI technology to provide personalized recommendations to its users. The platform analyzes user data, such as past bookings, search history, and preferences, to suggest accommodations and activities that are tailored to their needs. </span></p>
+<p><span style="font-weight: 400;">This feature ensures that travelers get recommendations that are relevant to their interests and preferences, making their travel experience more enjoyable and memorable.</span></p>
+<h2><strong>24/7 Customer Support</strong></h2>
+<p><span style="font-weight: 400;">Usecheckin.com offers 24/7 customer support to its users, ensuring that they receive assistance whenever they need it. The platform's customer support team is available via phone, email, and chat, making it easy for travelers to get the help they need. </span></p>
+<p><span style="font-weight: 400;">This feature is particularly useful for families, friends, and other travelers who may have questions or concerns about their bookings.</span></p>
+<p><span style="font-weight: 400;">In conclusion, Usecheckin.com is the ideal platform for families, friends, and other travelers who are looking for a unique and enjoyable travel experience. </span></p>
+<p><span style="font-weight: 400;">With its easy-to-use interface, wide range of accommodations and activities, competitive prices and offers, personalized recommendations, and 24/7 customer support, Usecheckin.com provides travelers with more value, more space, and more fun than other online booking platforms.</span></p>
+`,
+    url: "unlocking-unforgettable-group-travel-experiences",
+  },
+  {
+    id: 19,
+    category: 1,
+    section: 3,
+    title: "Mastering Calendar Management on Usecheckin.com",
+    description:
+      "Mastering Calendar Management on Usecheckin.com: A Comprehensive Guide for Hosts",
+    content: `<div>
+<h2><strong>Mastering Calendar Management on Usecheckin.com: A Comprehensive Guide for Hosts
+</strong></h2>
+</div>
+<h2><strong>Introduction </strong></h2>
+<p><span style="font-weight: 400;">As a host on Usecheckin.com, one of the key elements to successfully managing your vacation rental is an up-to-date and accurate calendar. The calendar serves as the backbone of your hosting journey, allowing you to control availability, monitor bookings, and optimize your revenue potential. </span></p>
+<p><span style="font-weight: 400;">In this blog post, we will provide a detailed guide on updating your calendar on Usecheckin.com, including how to block or unblock dates, and deciphering the various indicators or symbols that appear on your calendar.</span></p>
+<h4><b>Understanding the Calendar Indicators </b></h4>
+<p><span style="font-weight: 400;">Popular Days The "popular days" indicator highlights dates that are in high demand and have a higher likelihood of getting booked. Keep an eye on these dates as they present excellent opportunities to maximize your occupancy and revenue.</span></p>
+<h4><span style="font-weight: 400;"><strong>Blocked Dates </strong> </span></h4>
+<p><span style="font-weight: 400;">When you block certain dates on your calendar, they will be marked as "blocked." This feature allows you to reserve specific dates exclusively for personal use or for any other reasons you may have. Blocking dates ensures that your property remains unavailable for bookings during those periods.</span></p>
+<h4><span style="font-weight: 400;"><strong>Blocked Hours </strong> </span></h4>
+<p><span style="font-weight: 400;">In addition to blocking entire days, Usecheckin.com also provides the option to block specific hours within a day. This can be useful if you want to restrict check-in or check-out times or need to allocate time for cleaning and maintenance between guests.</span></p>
+<h4><span style="font-weight: 400;"><strong>Modify Dates </strong> </span></h4>
+<p><span style="font-weight: 400;">The "modify dates" indicator allows you to make adjustments to the existing booking dates without canceling the reservation. It provides flexibility to accommodate changes requested by guests, such as extending or shortening their stay.</span></p>
+<h4><span style="font-weight: 400;"><strong>Low Booking Ratio </strong> </span></h4>
+<p><span style="font-weight: 400;">The "low booking ratio" indicator highlights periods with a lower than average booking rate. It can help you identify dates that may need special attention, such as adjusting pricing or offering promotional deals to attract more guests during these periods.</span></p>
+<h3><strong>Updating Your Calendar </strong></h3>
+<h4><span style="font-weight: 400;"><strong>Blocking Dates </strong> </span></h4>
+<p><span style="font-weight: 400;">To block specific dates or hours, go to your Usecheckin.com host dashboard and navigate to the calendar section. Select the desired dates or hours and choose the "Block" option. This will ensure that your property is unavailable for bookings during the blocked period.</span></p>
+<h4><span style="font-weight: 400;"><strong>Unblock Dates </strong> </span></h4>
+<p><span style="font-weight: 400;">If you need to make previously blocked dates available for bookings, access your calendar, locate the blocked dates, and select the "Unblock" option. This will open up those dates for potential guests to make reservations.</span></p>
+<h4><span style="font-weight: 400;"><strong>Modifying Dates </strong> </span></h4>
+<p><span style="font-weight: 400;">In case you need to adjust the dates of an existing booking, refer to the reservation details on your host dashboard. Find the "Modify Dates" option and follow the prompts to make the necessary changes while keeping the reservation intact.</span></p>
+<h3><b>Optimizing Your Calendar for Success</b></h3>
+<h4><span style="font-weight: 400;"><strong>Regularly Update Your Availability </strong> </span></h4>
+<p><span style="font-weight: 400;">It is crucial to keep your calendar updated to reflect accurate availability. Promptly block or unblock dates as needed to ensure potential guests can see your property's availability accurately.</span></p>
+<h4><span style="font-weight: 400;"><strong>Consider Seasonal Demand </strong> </span></h4>
+<p><span style="font-weight: 400;">Analyze the popular days and low booking ratio indicators on your calendar to identify trends in seasonal demand. Adjust your pricing and availability accordingly to capitalize on peak seasons and attract more guests during slower periods.</span></p>
+<h4><span style="font-weight: 400;"><strong>Communicate with Guests </strong> </span></h4>
+<p><span style="font-weight: 400;">Use the exceptional chat system on Usecheckin.com to stay in touch with guests, discuss potential modifications, and address any inquiries or concerns. Prompt and clear communication can enhance guest satisfaction and increase the likelihood of positive reviews.</span></p>
+<h4><b>Conclusion </b></h4>
+<p><span style="font-weight: 400;">Managing your calendar effectively on Usecheckin.com is vital for optimizing your vacation rental's performance. By understanding the various indicators and using the available features to block, unblock, and modify dates, you can ensure that your property is always accurately reflected on the platform. </span></p>
+<p><span style="font-weight: 400;">Regularly updating your calendar and adapting to seasonal demand will help you attract more guests and enhance your hosting success. Remember, clear communication with guests is key to providing a positive guest experience. Happy hosting!</span></p>
+`,
+    url: "mastering-calendar-management-on-usecheckin",
+  },
+  {
+    id: 20,
+    category: 1,
+    section: 3,
+    title: "Making a reservation",
+    description:
+      "The Ultimate Guide to Making Reservations on Usecheckin.com: Book Accommodations, Cars, and Adventures for Your Dream Vacation",
+    content: `<div>
+<h2><strong>The Ultimate Guide to Making Reservations on Usecheckin.com
+
+</strong></h2>
+</div>
+<h3><strong>Introduction:</strong></h3>
+<p><span style="font-weight: 400;">Planning a vacation can be an exciting but often overwhelming experience. With Usecheckin.com, your journey to the perfect getaway becomes seamless and convenient. In this comprehensive blog post, we will walk you through the process of making reservations on Usecheckin.com, whether you're booking accommodations, cars, or adventures, all from the same host or from different hosts. Let's dive in!</span></p>
+<h3><b>Booking Accommodations, Cars, and Adventures from the Same Host:</b></h3>
+<h4><strong>Search for Listings</strong></h4>
+<p><span style="font-weight: 400;">Begin by visiting Usecheckin.com and entering your desired destination, travel dates, and number of guests. Browse through the available listings, and filter your search based on your preferences, such as property type, amenities, and price range.</span></p>
+<h4><span style="font-weight: 400;"><strong>Select Your Accommodation</strong></span></h4>
+<p><span style="font-weight: 400;">Once you find the perfect accommodation, click on the listing to view more details, including photos, descriptions, and guest reviews. Ensure that the accommodation meets your requirements and aligns with your travel needs.</span></p>
+<h4><span style="font-weight: 400;"><strong>Reserve Accommodation</strong></span></h4>
+<p><span style="font-weight: 400;">Click on the "Book" or "Reserve" button on the listing page. Review the booking details, including dates, pricing, and any additional fees or requirements. Provide the necessary information, such as the number of guests, and proceed to confirm your reservation.</span></p>
+<h4><span style="font-weight: 400;"><strong>Add Cars and Adventures</strong></span></h4>
+<p><span style="font-weight: 400;">Some hosts on Usecheckin.com offer additional services, such as car rentals and adventure experiences. If available, explore these options on the host's listing page. Follow the same process as with accommodations to reserve cars and adventures.</span></p>
+<h3><b>Booking Accommodations, Cars, and Adventures from Different Hosts:</b></h3>
+<h4><span style="font-weight: 400;"><strong>Multiple Reservations</strong></span></h4>
+<p><span style="font-weight: 400;">If you prefer to book accommodations, cars, and adventures from different hosts, you can do so by repeating the reservation process for each component of your trip.</span></p>
+<h4><strong>Open Multiple Listings</strong></h4>
+<p><span style="font-weight: 400;">Search for each desired listing separately, ensuring you select accommodations, cars, and adventures that suit your preferences. Open each listing in different tabs or windows to easily switch between them during the reservation process.</span></p>
+<h4><strong>Reserve Separately</strong></h4>
+<p><span style="font-weight: 400;">Start with one listing, follow the steps mentioned earlier to reserve accommodations, cars, and adventures from that particular host. Once the reservation is confirmed, move on to the next listing and repeat the process with the other host.</span></p>
+<h3><b>Tips for a Smooth Reservation Experience</b></h3>
+<h4><strong>Communication with Hosts</strong></h4>
+<p><span style="font-weight: 400;">Utilize the exceptional chat system provided by Usecheckin.com to communicate with hosts. Clarify any queries or special requirements you may have before making your reservation. This helps ensure a pleasant and tailored experience.</span></p>
+<h4><strong>Review Policies and Terms</strong></h4>
+<p><span style="font-weight: 400;">Familiarize yourself with the cancellation policies, house rules, and any specific terms and conditions set by each host. Understanding these details will help you make informed decisions and avoid any surprises later on.</span></p>
+<h4><strong>Payment and Security</strong></h4>
+<p><span style="font-weight: 400;">Usecheckin.com provides secure payment processing to protect your financial information. Be sure to provide accurate payment details and review the platform's policies regarding refunds and dispute resolution.</span></p>
+<h4><b>Conclusion</b></h4>
+<p><span style="font-weight: 400;">Making reservations on Usecheckin.com opens up a world of possibilities for your dream vacation. Whether you choose to book accommodations, cars, and adventures from the same host or from different hosts, the platform offers a seamless and efficient process. Remember to communicate with hosts, review policies, and enjoy the peace of mind that comes with secure transactions. Start planning your next adventure on Usecheckin.com and create unforgettable memories.</span></p>
+`,
+    url: "making-a-reservation",
   },
 ];
 

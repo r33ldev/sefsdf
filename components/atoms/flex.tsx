@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import styled, { CSSProperties } from "styled-components";
@@ -49,7 +49,6 @@ export const Flex: React.FC<flexProps> = ({
   wrap,
   border,
 }) => {
-  console.log("flex", wrap);
   return (
     <FlexWrapper
       id={id}

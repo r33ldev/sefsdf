@@ -19,7 +19,7 @@ function ArticleMain({
   const [tocList, setTocList] = useState<any>([]);
   const [active, setActive] = useState<any>(tocList[0]);
   useEffect(() => {
-    const headings = document.querySelectorAll("h1, h2, h3");
+    const headings = document.querySelectorAll("h1, h2, h3, h4");
     const newList = [];
     for (const heading of headings) {
       const text = (heading as HTMLElement).innerText;

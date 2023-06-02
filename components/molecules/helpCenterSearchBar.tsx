@@ -23,6 +23,7 @@ const InputAddonWrapper = styled.div<{ margin: string }>`
   & > img,
   & > svg {
     position: absolute;
+    z-index: 300;
   }
   & > img {
     cursor: pointer;

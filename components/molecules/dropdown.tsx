@@ -1,8 +1,11 @@
+"use client";
+
 import type { MenuProps } from "antd";
 import { Dropdown as AntdDropdown, Space } from "antd";
 import React from "react";
-import Arrowdown from "../icons/arrowDown";
-import Flex from "../atoms/flex";
+import Arrowdown from "icon/arrowDown";
+import Flex from "atom/flex";
+import { useScreenResolution } from "hook/useScreenResolution";
 
 const style: React.CSSProperties = {
   width: "100%",
@@ -21,15 +24,22 @@ interface dropdownInterface {
   children?: React.ReactNode;
 }
 
-const Dropdown = ({ onClick, items, value, children }: dropdownInterface) => (
-  <AntdDropdown menu={{ items, onClick, style }} trigger={["click"]}>
-    <div onClick={(e) => e.preventDefault()}>
-      <Flex justify="space-between" padding="0 5rem" align="center">
-        {value}
-        <Arrowdown />
-      </Flex>
-    </div>
-  </AntdDropdown>
-);
+const Dropdown = ({ onClick, items, value, children }: dropdownInterface) => {
+  const { isMobile } = useScreenResolution();
+  return (
+    <AntdDropdown menu={{ items, onClick, style }} trigger={["click"]}>
+      <div onClick={(e) => e.preventDefault()}>
+        <Flex
+          justify="space-between"
+          padding={`0 ${isMobile ? 2 : 5}rem`}
+          align="center"
+        >
+          {value}
+          <Arrowdown />
+        </Flex>
+      </div>
+    </AntdDropdown>
+  );
+};
 
 export default Dropdown;

@@ -15,7 +15,7 @@ const GridWrapper = styled.div<{ columns: string; gap: string }>`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
   }
   
 `;

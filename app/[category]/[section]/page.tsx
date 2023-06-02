@@ -1,22 +1,15 @@
-import { Qparams } from "@/types";
-import React from "react";
-import { getArticles, getCategory, getSubCategories } from "../utils/data";
-import Link from "@/components/atoms/link";
-import Text from "@/components/atoms/text";
-import SectionLayout from "@/components/molecules/sectionLayout";
-import HelpCenterSearchBar from "@/components/molecules/helpCenterSearchBar";
-import { Divider } from "@/components/atoms/divider";
-import ListingTypeTab from "@/components/molecules/listingTypeTab";
-import Flex from "@/components/atoms/flex";
-import ArrowRight from "@/components/icons/arrowRight";
-import SectionAside from "@/components/molecules/sectionAside";
 import NotFoundPage from "@/app/404";
+import { Qparams } from "@/types";
+import { Divider } from "atom/divider";
+import Flex from "atom/flex";
+import ListingTypeTab from "molecule/listingTypeTab";
+import SectionArticle from "molecule/sectionArticles";
+import SectionAside from "molecule/sectionAside";
+import SectionHero from "molecule/sectionHero";
+import SectionLayout from "molecule/sectionLayout";
+import { getArticles, getCategory, getSubCategories } from "../utils/data";
 
-const TextLink = ({ text, href }: { text: string; href: string }) => (
-  <Link href={href}>
-    <Text text={text} type="h1" size="1.5rem" />
-  </Link>
-);
+
 
 function Section({ params }: Qparams) {
   if (!params.section) return <NotFoundPage />;
@@ -31,11 +24,7 @@ function Section({ params }: Qparams) {
   return (
     <>
       <SectionLayout>
-        <Link href={subCategory.url}>
-          <Text text={subCategory.name} type="p" size={48} weight={600} />
-        </Link>
-        <Text text={subCategory.description} type="p" size={15} weight={200} />
-        <HelpCenterSearchBar margin={"2rem 0"} />
+        <SectionHero title={subCategory.name} description={subCategory.description} />
       </SectionLayout>
       <Divider margin="0" />
       <ListingTypeTab />
@@ -45,23 +34,7 @@ function Section({ params }: Qparams) {
             subCategories={subCategories}
             subCategory={subCategory.name}
           />
-          <main style={{ width: "40%" }}>
-            <Text
-              text="Getting started"
-              type="h1"
-              size="2.3rem"
-              styles={{ marginBottom: "1rem" }}
-            />
-            {articles.map((article) => (
-              <div key={article.id}>
-                <Flex align="center" gap=".5rem">
-                  <TextLink text={article.title} href={article.url} />
-                  <ArrowRight />
-                </Flex>
-                <Divider margin="1.2rem 0" />
-              </div>
-            ))}
-          </main>
+         <SectionArticle articles={articles}/>
         </Flex>
       </SectionLayout>
     </>
