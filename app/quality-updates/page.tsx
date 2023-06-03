@@ -6,6 +6,7 @@ import SectionLayout from "@/components/molecules/sectionLayout";
 import UpdateArticles from "@/components/molecules/updateArticles";
 import { QualityUpdate } from "@/types";
 import { QUALITY_UPDATES } from "@/utils/data";
+import SectionHero from "molecule/sectionHero";
 
 function UpdateHomePage() {
   const articles = QUALITY_UPDATES;
@@ -18,11 +19,10 @@ function UpdateHomePage() {
   return (
     <>
       <SectionLayout>
-        <Link href="/quality-updates">
-          <Text text="Quality Updates" type="h1" size={48} weight={600} />
-        </Link>
-        <Text text="Checkin Support - updates" type="h1" size="2.3rem" />
-        <HelpCenterSearchBar margin="2rem 0" />
+        <SectionHero
+          title="Quality Updates"
+          description="Checkin Support - updates"
+        />
       </SectionLayout>
       <Divider margin="0" />
       <UpdateArticles repeatedArticles={repeatedArticles} />

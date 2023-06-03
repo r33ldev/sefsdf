@@ -20,7 +20,7 @@ function SectionHero({
       <Link href="/">
         <Text text={title} type="h1" size={isMobile ? 30 : 48} weight={600} />
       </Link>
-      <Text text={description} type="h1" size={isMobile ? "2rem" : "2.3rem"} />
+      <Text text={description} type="p" size={isMobile ? "1.5rem" : "1.7rem"} weight={300} />
       {showSearch && <HelpCenterSearchBar margin="2rem 0" />}
     </div>
   );

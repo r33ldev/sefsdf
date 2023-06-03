@@ -14,7 +14,7 @@ const BreadCrumb = () => {
 
   return (
     <Flex
-      gap={isMobile ? "1rem" : "2rem"}
+      gap={isMobile ? "1rem" : "1.4rem"}
       align="center"
       margin="1rem 0"
       wrap="wrap"
@@ -24,7 +24,7 @@ const BreadCrumb = () => {
           type="p"
           text="Home"
           size="1.5rem"
-          weight={600}
+          weight='regular'
           underline="underline"
         />
       </Link>
@@ -36,17 +36,23 @@ const BreadCrumb = () => {
         item = item.replace(/-/g, " ");
         if (index === pathArray.length - 1) {
           return (
-            <Text key={index} type="p" text={item} size="1.5rem" weight={100} />
+            <Text
+              key={index}
+              type="p"
+              text={capitalized(item)}
+              size="1.5rem"
+              weight={200}
+            />
           );
         }
         return (
-          <Flex key={index} width="fit-content" align="center" gap="2rem">
+          <Flex key={index} width="fit-content" align="center" gap="1.4rem">
             <Link href={pathArray.slice(0, index + 1).join("/")}>
               <Text
                 type="p"
                 text={capitalized(item)}
                 size="1.5rem"
-                weight={600}
+                weight='regular'
                 underline="underline"
                 whiteSpace="nowrap"
               />

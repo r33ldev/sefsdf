@@ -40,7 +40,7 @@ export default function Home() {
                     text={category.description}
                     type="p"
                     size={15}
-                    weight={300}
+                    weight="300"
                   />
                 </div>
               </Flex>
@@ -62,7 +62,7 @@ export default function Home() {
                       text={article.title}
                       type="p"
                       size={17}
-                      weight={200}
+                      weight={"regular"}
                     />
                     <ArrowRight />
                   </Flex>

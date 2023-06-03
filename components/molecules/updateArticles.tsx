@@ -40,7 +40,7 @@ function UpdateArticles({ repeatedArticles }: UpdateArticlesProps) {
     <div>
       <ListingTypeTab />
       <SectionLayout margin="4rem auto">
-        <main style={{ maxWidth: "70%" }}>
+        <main style={{ maxWidth: "80%" }}>
           {shownArticles.map((article) => (
             <Link href={`/quality-updates/${article.url}`} key={article.id}>
               <Flex gap="2rem" margin="2rem 0">
@@ -61,9 +61,9 @@ function UpdateArticles({ repeatedArticles }: UpdateArticlesProps) {
                   <Text
                     text={article.description.slice(0, 100)}
                     type="p"
-                    size="1.5rem"
+                    size="1.5rem" color='#363636'
                   />
-                  <Text text={article.createdAt} type="p" size="1.5rem" />
+                  <Text text={article.createdAt} type="p" size="1.5rem" color='#363636' />
                 </Flex>
               </Flex>
               <Divider />

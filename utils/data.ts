@@ -6,14 +6,20 @@ import {
   Support,
   VideoArticle,
 } from "@/types";
-import icon1 from "../assets/image/category/1.svg";
-import icon2 from "../assets/image/category/2.svg";
-import icon3 from "../assets/image/category/3.svg";
-import icon4 from "../assets/image/category/4.svg";
-import section1 from "../assets/image/section/1.svg";
-import section2 from "../assets/image/section/2.svg";
-import section3 from "../assets/image/section/3.svg";
-import section4 from "../assets/image/section/4.svg";
+import icon1 from "image/category/1.svg";
+import icon2 from "image/category/2.svg";
+import icon3 from "image/category/3.svg";
+import icon4 from "image/category/4.svg";
+import section1 from "image/section/1.svg";
+import section2 from "image/section/2.svg";
+import section3 from "image/section/3.svg";
+import section4 from "image/section/4.svg";
+import section6 from "image/section/6.png";
+import section7 from "image/section/7.png";
+import section8 from "image/section/8.png";
+import section9 from "image/section/9.png";
+import section10 from "image/section/10.png";
+import section11 from "image/section/12.png";
 
 import articleCoverImage from "../assets/image/video-article.png";
 
@@ -58,7 +64,7 @@ export const SUPPORT_CATEGORY: Support[] = [
 
 export const SUPPORT_SUBCATEGORY: Section[] = [
   {
-    name: "Account",
+    name: "My Account",
     id: 1,
     description: "account",
     url: "account",
@@ -66,10 +72,10 @@ export const SUPPORT_SUBCATEGORY: Section[] = [
     icon: section1,
   },
   {
-    name: "Billing",
+    name: "Payments",
     id: 2,
-    description: "billing",
-    url: "billing",
+    description: "payments",
+    url: "payments",
     category: 1,
     icon: section3,
   },
@@ -90,8 +96,56 @@ export const SUPPORT_SUBCATEGORY: Section[] = [
     icon: section4,
   },
   {
-    name: "Troubleshooting",
+    name: "Reservations",
+    id: 6,
+    description: "reservations",
+    url: "reservations",
+    category: 1,
+    icon: section6,
+  },
+  {
+    name: "Damages",
     id: 7,
+    description: "Learn more about damages",
+    url: "damages",
+    category: 1,
+    icon: section7,
+  },
+  {
+    name: "Hosts",
+    id: 8,
+    description: "Learn how to use checkin as a host",
+    url: "hosts",
+    category: 1,
+    icon: section8,
+  },
+  {
+    name: "Guests",
+    id: 9,
+    description: "Learn how to use checkin as a guest",
+    url: "guests",
+    category: 1,
+    icon: section9,
+  },
+  {
+    name: "Terms & Services",
+    id: 10,
+    description: "Learn more about terms and services",
+    url: "terms-services",
+    category: 1,
+    icon: section10,
+  },
+  {
+    name: "Check In & out",
+    id: 11,
+    description: "Learn more about check in and check out",
+    url: "check-in-out",
+    category: 1,
+    icon: section11,
+  },
+  {
+    name: "Troubleshooting",
+    id: 13,
     description: "troubleshooting",
     url: "troubleshooting",
     category: 2,
@@ -99,7 +153,7 @@ export const SUPPORT_SUBCATEGORY: Section[] = [
   },
   {
     name: "Partnership",
-    id: 8,
+    id: 14,
     description: "troubleshooting partnership",
     url: "partnership",
     category: 2,
@@ -107,7 +161,7 @@ export const SUPPORT_SUBCATEGORY: Section[] = [
   },
   {
     name: "guides",
-    id: 9,
+    id: 15,
     description: "troubleshooting",
     url: "guides",
     category: 3,
@@ -116,7 +170,7 @@ export const SUPPORT_SUBCATEGORY: Section[] = [
 
   {
     name: "About Checkin",
-    id: 14,
+    id: 16,
     description: "about checkin",
     url: "about-checkin",
     category: 2,
@@ -283,7 +337,7 @@ export const SUPPORT_ARTICLES: ArticleType[] = [
     title: "Unlocking Affordable Adventures",
     description:
       "Unlocking Affordable Adventures: A Guide to Budget-Friendly Travel with a Revolutionary AI-Driven Global Platform",
-    content: `<h2><b>Unlocking Affordable Adventures: A Guide to Budget-Friendly Travel with a Revolutionary AI-Driven Global Platform</b></h2>
+    content: `
 <p><b></b></p>
 <p><span style="font-weight: 400;">Are you planning your next vacation but concerned about going over budget? With the launch of Usecheckin.com the first global AI traveling and tourism platform, budget-friendly travel is now easier than ever before. This platform is five times better than other online travel agencies, as it allows travelers to reserve accommodations, cars, adventures, and connect with other travelers all on the same platform.</span></p>
 <p><span style="font-weight: 400;">So how can you plan a budget-friendly vacation using Usecheckin.com? Here are some tips to get you started:</span></p>
@@ -313,7 +367,6 @@ export const SUPPORT_ARTICLES: ArticleType[] = [
     description:
       "Solo Travel Made Safe and Seamless: Embrace Usecheckin.com for Unforgettable Solo Adventures in 2023",
     content: `<div>
-<h2><strong>Solo Travel Made Safe and Seamless: Embrace Usecheckin.com for Unforgettable Solo Adventures in 2023</strong></h2>
 </div>
 <p><span style="font-weight: 400;">Solo travel has become increasingly popular over the years, as more and more people seek to explore the world on their own terms. However, traveling solo can be daunting, especially for those who are new to it. Fortunately, there are now many tools and resources available to solo travelers, especially the travelers' favorite Usecheckin.com platform. In this blog post, we'll explore why solo travelers should use Usecheckin.com as their go-to platform for booking solo trips, highlighting its unique features and benefits.</span></p>
 <p><span style="font-weight: 400;">First, let's take a look at what makes Usecheckin.com the travelers favorite. Usecheckin.com is a global AI traveling and tourism platform that offers a range of features and services to help travelers plan their trips. It is a one-stop-shop for booking flights, accommodations, cars, adventures, and more. What sets Usecheckin.com apart from other travel platforms is its focus on solo travelers. It is designed to cater specifically to the needs and preferences of solo travelers, making it an ideal choice for those looking to travel alone.</span></p>
@@ -339,7 +392,6 @@ export const SUPPORT_ARTICLES: ArticleType[] = [
     description:
       "Unlocking Unforgettable Group Travel Experiences: Discover the Benefits of Usecheckin.com for Families and Friends",
     content: `<div>
-<h2><strong>Unlocking Unforgettable Group Travel Experiences: Discover the Benefits of Usecheckin.com for Families and Friends</strong></h2>
 </div>
 <p><span style="font-weight: 400;">Traveling is a fantastic way to spend time with loved ones, explore new places, and create lasting memories. However, planning and booking a trip can often be a daunting and overwhelming task, especially with the plethora of online booking platforms available. </span></p>
 <p><span style="font-weight: 400;">Among these platforms, Usecheckin.com stands out as the first global AI one-stop-shop traveling and tourism platform that offers a unique experience to its users. In this blog post, we will explore the reasons why families, friends, and other travelers find more value, more space, and more fun when traveling on Usecheckin.com compared to other online platforms.</span></p>
@@ -371,8 +423,6 @@ export const SUPPORT_ARTICLES: ArticleType[] = [
     description:
       "Mastering Calendar Management on Usecheckin.com: A Comprehensive Guide for Hosts",
     content: `<div>
-<h2><strong>Mastering Calendar Management on Usecheckin.com: A Comprehensive Guide for Hosts
-</strong></h2>
 </div>
 <h2><strong>Introduction </strong></h2>
 <p><span style="font-weight: 400;">As a host on Usecheckin.com, one of the key elements to successfully managing your vacation rental is an up-to-date and accurate calendar. The calendar serves as the backbone of your hosting journey, allowing you to control availability, monitor bookings, and optimize your revenue potential. </span></p>
@@ -415,9 +465,6 @@ export const SUPPORT_ARTICLES: ArticleType[] = [
     description:
       "The Ultimate Guide to Making Reservations on Usecheckin.com: Book Accommodations, Cars, and Adventures for Your Dream Vacation",
     content: `<div>
-<h2><strong>The Ultimate Guide to Making Reservations on Usecheckin.com
-
-</strong></h2>
 </div>
 <h3><strong>Introduction:</strong></h3>
 <p><span style="font-weight: 400;">Planning a vacation can be an exciting but often overwhelming experience. With Usecheckin.com, your journey to the perfect getaway becomes seamless and convenient. In this comprehensive blog post, we will walk you through the process of making reservations on Usecheckin.com, whether you're booking accommodations, cars, or adventures, all from the same host or from different hosts. Let's dive in!</span></p>

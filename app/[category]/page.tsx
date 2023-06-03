@@ -51,9 +51,9 @@ export default async function CategoryPage({ params }: Qparams) {
                   <Text
                     text={"view section \u27F6"}
                     type="p"
-                    size={13}
+                    size={16}
                     color="#1B76AF"
-                    weight={100}
+                    weight={'regular'}
                   />
                 </div>
               </Flex>

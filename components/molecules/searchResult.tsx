@@ -10,7 +10,8 @@ import Pagination from "./pagination";
 import { useState } from "react";
 import { ArticleType } from "@/types";
 import { useScreenResolution } from "hook/useScreenResolution";
-
+import ArrowRight from "image/arrowRight.svg";
+import Image from "next/image";
 export default function SearchResults() {
   const searchParams = useSearchParams();
   const search = searchParams.get("term");
@@ -52,22 +53,23 @@ export default function SearchResults() {
                     text={article.description.slice(0, 200)}
                     type="p"
                     size={15}
+                    color="#363636"
                   />
-                  <Flex align="flex-end" gap="1rem" margin="1.4rem 0">
+                  <Flex align="center" gap="1.5rem" margin="1.4rem 0">
                     <Text
                       text={accountType}
                       type="p"
                       size={15}
                       color="#1B76AF"
                     />
-                    <Text text={" ⟶"} type="p" size={15} color="#1B76AF" />
+                    <Image src={ArrowRight} width={17} alt="arrow" />
                     <Text
                       text={"Getting Started"}
                       type="p"
                       size={15}
                       color="#1B76AF"
                     />
-                    <Text text={" ⟶"} type="p" size={15} color="#1B76AF" />
+                    <Image src={ArrowRight} width={17} alt="arrow" />
                   </Flex>
                   <Divider margin="3rem 0" />
                 </Link>

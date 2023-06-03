@@ -42,6 +42,7 @@ function ArticleMain({
           type="p"
           text={article.title || ""}
           size={isMobile ? "2.9rem" : "3.6rem"}
+          weight="bold"
         />
         <Article>
           <article

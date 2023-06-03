@@ -23,6 +23,7 @@ function SectionArticle({ articles }: { articles: ArticleType[] }) {
         type="h1"
         size="2.3rem"
         styles={{ marginBottom: "1rem" }}
+        weight={700}
       />
       {articles.map((article) => (
         <div key={article.id}>
