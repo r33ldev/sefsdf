@@ -3,11 +3,10 @@
 import Article from "@/components/atoms/article";
 import Text from "@/components/atoms/text";
 import TOC from "@/components/atoms/toc";
-import { ArticleType } from "@/types";
-import { VideoArticle } from "@/types";
-import React, { useEffect, useState } from "react";
-import Flex from "./flex";
+import { ArticleType, VideoArticle } from "@/types";
 import { useScreenResolution } from "hook/useScreenResolution";
+import { useEffect, useState } from "react";
+import Flex from "./flex";
 
 type ArticleMainType<T> = Partial<T> & { body: string };
 

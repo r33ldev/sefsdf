@@ -1,16 +1,16 @@
 "use client";
 
-import React, { useState } from "react";
-import ListingTypeTab from "./listingTypeTab";
-import SectionLayout from "./sectionLayout";
 import { QualityUpdate } from "@/types";
-import Flex from "../atoms/flex";
-import CheckinLogo from "../icons/checkinLogo";
-import Text from "../atoms/text";
+import { useState } from "react";
 import styled from "styled-components";
 import { Divider } from "../atoms/divider";
+import Flex from "../atoms/flex";
 import Link from "../atoms/link";
+import Text from "../atoms/text";
+import CheckinLogo from "../icons/checkinLogo";
+import ListingTypeTab from "./listingTypeTab";
 import Pagination from "./pagination";
+import SectionLayout from "./sectionLayout";
 
 interface UpdateArticlesProps {
   repeatedArticles: QualityUpdate[];

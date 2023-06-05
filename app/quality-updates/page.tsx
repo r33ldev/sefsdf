@@ -1,7 +1,4 @@
 import { Divider } from "@/components/atoms/divider";
-import Link from "@/components/atoms/link";
-import Text from "@/components/atoms/text";
-import HelpCenterSearchBar from "@/components/molecules/helpCenterSearchBar";
 import SectionLayout from "@/components/molecules/sectionLayout";
 import UpdateArticles from "@/components/molecules/updateArticles";
 import { QualityUpdate } from "@/types";
