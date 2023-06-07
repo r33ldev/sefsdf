@@ -30,10 +30,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta rel="icon" content="/favicon.svg" property="og:image" />
+        <link rel="icon" href="/favicon.svg" sizes="any" />
       </head>
       <body>
-        <div style={{ flex: 1, }}>
+        <div style={{ flex: 1 }}>
           <CheckinHelpCenterHeader />
           <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
         </div>
